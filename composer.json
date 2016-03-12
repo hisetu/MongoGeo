@@ -1,0 +1,25 @@
+{
+  "name": "hisetu/mongo-geo",
+  "license": "MIT",
+  "description": "mongodb geo",
+  "require-dev": {
+    "phpunit/phpunit": "^5.2"
+  },
+  "authors": [
+    {
+      "name": "hisetu",
+      "email": "hisetu@gmail.com"
+    }
+  ],
+  "require": {
+    "ext-mongo": ">=1.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "hisetu\\MongoGeo\\": "src/"
+    }
+  },
+  "keywords": [
+    "geo"
+  ]
+}
