@@ -37,7 +37,7 @@ class MongoGeo
             ['upsert' => true]);
     }
 
-    public function near($lat, $lng, $maxDistance = 0)
+    public function near($lng, $lat, $maxDistance = 0)
     {
         $mongoCursor = $this->collection->find([
             'loc' => [

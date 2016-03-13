@@ -33,13 +33,13 @@ class MongoGeoTest extends PHPUnit_Framework_TestCase
 
     public function test()
     {
-        $this->assertEquals('桃園國際機場一航廈入境大廳', $this->mongoGeo->near(25.081156, 121.237990)[0]['name']);
-        $this->assertEquals(0, count($this->mongoGeo->near(25.077033, 121.233769)));
-        $this->assertEquals(0, count($this->mongoGeo->near(25.076026, 121.233204)));
-        $this->assertEquals('桃園國際機場二航廈入境大廳', $this->mongoGeo->near(25.076292, 121.232584)[0]['name']);
-        $this->assertEquals('桃園國際機場二航廈入境大廳', $this->mongoGeo->near(25.076345, 121.233023)[0]['name']);
-        $this->assertEquals('桃園國際機場二航廈入境大廳', $this->mongoGeo->near(25.077148, 121.232319)[0]['name']);
-        $this->assertEquals('桃園國際機場二航廈入境大廳', $this->mongoGeo->near(25.077551, 121.232668)[0]['name']);
+        $this->assertEquals('桃園國際機場一航廈入境大廳', $this->mongoGeo->near(121.237990, 25.081156)[0]['name']);
+        $this->assertEquals(0, count($this->mongoGeo->near(121.233769, 25.077033)));
+        $this->assertEquals(0, count($this->mongoGeo->near(121.233204, 25.076026)));
+        $this->assertEquals('桃園國際機場二航廈入境大廳', $this->mongoGeo->near(121.232584, 25.076292)[0]['name']);
+        $this->assertEquals('桃園國際機場二航廈入境大廳', $this->mongoGeo->near(121.233023, 25.076345)[0]['name']);
+        $this->assertEquals('桃園國際機場二航廈入境大廳', $this->mongoGeo->near(121.232319, 25.077148)[0]['name']);
+        $this->assertEquals('桃園國際機場二航廈入境大廳', $this->mongoGeo->near(121.232668, 25.077551)[0]['name']);
     }
 
 }
