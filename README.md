@@ -1,4 +1,3 @@
 # MongoGeo #
 
-## Examples ##
-[see](tests/MongoGeoTest.php)
+[Examples](tests/MongoGeoTest.php)
