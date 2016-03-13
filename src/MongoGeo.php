@@ -50,7 +50,7 @@ class MongoGeo
                 ]
             ]
         ]);
-        return iterator_to_array($mongoCursor);
+        return iterator_to_array($mongoCursor, false);
     }
 
     /**
